@@ -2,6 +2,41 @@
 <form ng-hide="Fretalumnos">
     <H1 class="display-4 font-weight-bold"  align="center"> Retirar Alumnos{{nombres}} </H1>
     <section class="container">
+        <form>
+            <div class="form-group row">
+                <label for="codigo" class="col-3 col-form-label">Ingresar código</label>
+                <div class="col-4">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-edit"></i>
+                        </div>
+                        <input id="codigo" name="codigo" type="text" required="required" class="form-control here">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-3 col-9">
+                    <button name="submit" type="submit" class="btn btn-success">Buscar</button>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="alumno" class="col-3 col-form-label">Alumno:</label>
+                <div class="col-6">
+                    <select id="alumno" name="alumno" class="custom-select">
+                        <option value="name1">Pedro</option>
+                        <option value="name2">Pablo</option>
+                        <option value="name3">Juan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-3 col-9">
+                    <button name="eliminar" type="submit" class="btn btn-danger">Eliminar</button>
+                </div>
+            </div>
+        </form>
+
 
     </section>
 </form>

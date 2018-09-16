@@ -1,35 +1,85 @@
-
-
-
+<form ng-hide="Falumnosinscritos">
+    <H1 class="display-4 font-weight-bold"  align="center"> Alumnos Inscritos{{nombres}} </H1>
     <section class="container">
-        <div class="row">
-         <div class="col-8">
-             <div ng-hide="Falumnosinscritos">
-                    <form class="form-inline">
-                        <div class="form-group row">
-                            <label for="jornada" class="col-3 col-form-label">Jornada</label>
-                            <div class="col-8">
-                                <select id="jornada" name="curso" class="custom-select">
-                                    <option value="jor_matu">Jornada Matutina</option>
-                                    <option value="jor_vesper">Jornada Vespertina</option>
-                                    <option value="otrajor">Otra</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="horario" class="col-9 col-form-label">Horario</label>
-                            <div class="col-9">
-                                <select id="horario" name="curso" class="custom-select">
-                                    <option value="jor_matu">Lunes</option>
-                                    <option value="jor_vesper">Jornada Vespertina</option>
-                                    <option value="otrajor">Otra</option>
-                                </select>
-                            </div>
-                        </div>
-
-                 </form>
+        <div class="form-group row">
+            <label for="curso" class="col-2 col-form-label">Curso</label>
+            <div class="col-3">
+                <select id="curso" name="curso" class="custom-select">
+                    <option value="rabbit">Rabbit</option>
+                    <option value="duck">Duck</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
         </div>
 
+        <div class="form-group row">
+            <label for="jornada" class="col-2 col-form-label">Jornada</label>
+            <div class="col-3">
+                <select id="jornada" name="jornada" class="custom-select">
+                    <option value="rabbit">Rabbit</option>
+                    <option value="duck">Duck</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
         </div>
+        <div class="form-group row">
+            <label for="horario" class="col-2 col-form-label">Horario</label>
+            <div class="col-3">
+                <select id="horario" name="horario" class="custom-select">
+                    <option value="rabbit">Rabbit</option>
+                    <option value="duck">Duck</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="offset-5 col-8">
+                <button name="submit" type="submit" class="btn btn-success">Listar</button>
+            </div>
+        </div>
+
+        <!-- DataTables Example -->
+        <div class="card mb-3">
+            <div class="card-header" align="center">
+                <i class="fas fa-user"></i>
+                Informacion de Alumno</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                        <tr>
+                            <th>Codigo</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Fecha de Nacimiento</th>
+                            <th>Direccion</th>
+                            <th>Teléfono</th>
+                            <th>Curso</th>
+                            <th>Jornada</th>
+                            <th>Horario</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
     </section>
+</form>
