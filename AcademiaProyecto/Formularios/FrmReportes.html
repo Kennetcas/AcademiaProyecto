@@ -1,6 +1,6 @@
 
 <form ng-hide="Frepgeneral">
-    <H1 class="display-4 font-weight-bold"  align="center"> Reportes{{nombres}} </H1>
+    <H1 class="display-4 font-weight-bold"  align="center"> Alumnos Retirados </H1>
     <section class="container">
         <div class="form-group row">
             <label for="curso" class="col-2 col-form-label">Curso</label>
@@ -10,14 +10,13 @@
                     <option value="duck">Duck</option>
                 </select>
             </div>
-        </div>
-
-
-        <div class="form-group row">
-            <div class="offset-5 col-8">
+            <div class="offset-lg-1">
                 <button name="submit" type="submit" class="btn btn-success">Listar</button>
             </div>
         </div>
+
+
+
 
 
         <div class="card mb-3">
@@ -30,8 +29,7 @@
                         <thead>
                         <tr>
                             <th>Codigo</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
+                            <th>Nombre Completo</th>
                             <th>Fecha de Nacimiento</th>
                             <th>Direccion</th>
                             <th>Teléfono</th>
@@ -43,7 +41,6 @@
 
                         <tr>
                             <td>Tiger Nixon</td>
-                            <td>System Architect</td>
                             <td>Edinburgh</td>
                             <td>61</td>
                             <td>2011/04/25</td>

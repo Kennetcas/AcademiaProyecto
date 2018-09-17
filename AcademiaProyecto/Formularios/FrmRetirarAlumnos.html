@@ -1,6 +1,6 @@
 
 <form ng-hide="Fretalumnos">
-    <H1 class="display-4 font-weight-bold"  align="center"> Retirar Alumnos{{nombres}} </H1>
+    <H1 class="display-4 font-weight-bold"  align="center"> Retirar Alumnos </H1>
     <section class="container">
         <form>
             <div class="form-group row">
@@ -13,26 +13,51 @@
                         <input id="codigo" name="codigo" type="text" required="required" class="form-control here">
                     </div>
                 </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="offset-3 col-9">
+                <div class="offset-lg-1">
                     <button name="submit" type="submit" class="btn btn-success">Buscar</button>
                 </div>
             </div>
-            <div class="form-group row">
-                <label for="alumno" class="col-3 col-form-label">Alumno:</label>
-                <div class="col-6">
-                    <select id="alumno" name="alumno" class="custom-select">
-                        <option value="name1">Pedro</option>
-                        <option value="name2">Pablo</option>
-                        <option value="name3">Juan</option>
-                    </select>
+
+
+            <!-- DataTables Example -->
+            <div class="card mb-3">
+                <div class="card-header" align="center">
+                    <i class="fas fa-user"></i>
+                    Informacion de Alumno</div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Nombres</th>
+                                <th>Apellidos</th>
+                                <th>Curso</th>
+                                <th>Jornada</th>
+                                <th>Horario</th>
+
+                            </tr>
+                            </thead>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>61</td>
+                                <td>$320,800</td>
+                                <td>$320,800</td>
+
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+
             </div>
+
             <div class="form-group row">
-                <div class="offset-3 col-9">
-                    <button name="eliminar" type="submit" class="btn btn-danger">Eliminar</button>
+                <div class="offset-5 col-9">
+                    <button name="eliminar" type="submit" class="btn btn-danger">Retirar</button>
                 </div>
             </div>
         </form>

@@ -1,8 +1,9 @@
 angular.module("AppAcademia",[])
 .controller("Controlador1",function ($scope) {
-    $scope.nombres = "la maria";
+  /*  $scope.nombres = "la maria";*/
 
   // varialbes utiizadas para mostrar u ocultar formularios
+
     $scope.Finscribir = true;
     $scope.Falumnosinscritos = true;
     $scope.Fnotas=true;
@@ -10,7 +11,8 @@ angular.module("AppAcademia",[])
     $scope.Fretalumnos=true;
     $scope.Frepgeneral=true;
 
-//cabiar de estado las variables para mostrar u ocultar formularios
+
+//cambiar de estado las variables para mostrar u ocultar formularios
     $scope.FormInscripciones=function () {
         $scope.Finscribir=false;
         $scope.Falumnosinscritos=true
@@ -18,6 +20,7 @@ angular.module("AppAcademia",[])
         $scope.Fmensualiades=true;
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=true;
+
     };
     $scope.FormAlumnosInscritos=function () {
         $scope.Finscribir=true;
@@ -26,6 +29,7 @@ angular.module("AppAcademia",[])
         $scope.Fmensualiades=true;
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=true;
+
 
     };
     $scope.FormNotas=function () {
@@ -36,6 +40,7 @@ angular.module("AppAcademia",[])
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=true;
 
+
     };
     $scope.FormMensualidades=function () {
         $scope.Finscribir=true;
@@ -44,6 +49,7 @@ angular.module("AppAcademia",[])
         $scope.Fmensualiades=false;
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=true;
+
 
     };
     $scope.FormRetAlumnos=function () {
@@ -54,6 +60,7 @@ angular.module("AppAcademia",[])
         $scope.Fretalumnos=false;
         $scope.Frepgeneral=true;
 
+
     };
     $scope.FormRepGeneral=function () {
         $scope.Finscribir=true;
@@ -63,6 +70,8 @@ angular.module("AppAcademia",[])
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=false;
 
+
     };
+
 
 });
