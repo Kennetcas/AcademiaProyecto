@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c5bb918-4a06-4196-bee7-88d8e682ccbf" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/App/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/App/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademiaProyecto/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,7 +13,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="135" column="54" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrmAlumnosInscritos.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,12 +62,12 @@
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/Mensaje.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/App/app.js" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/index.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/index.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" />
       </list>
     </option>
   </component>
@@ -82,7 +94,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,6 +134,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -170,11 +182,12 @@
       <workItem from="1537141042941" duration="230000" />
       <workItem from="1537142116975" duration="2795000" />
       <workItem from="1537153278242" duration="12283000" />
+      <workItem from="1537191899306" duration="96000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40327000" />
+    <option name="totallyTimeSpent" value="40423000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -315,32 +328,13 @@
     <entry file="file://$PROJECT_DIR$/startbootstrap-sb-admin-gh-pages/.travis.yml" />
     <entry file="file://$PROJECT_DIR$/startbootstrap-sb-admin-gh-pages/.gitignore" />
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Angular/angular.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/Mensaje.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/Mensaje.html" />
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/App/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -379,10 +373,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="42" column="37" lean-forward="true" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        <state relative-caret-position="241">
+          <caret line="135" column="54" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="54" />
         </state>
       </provider>
     </entry>
