@@ -1,38 +1,26 @@
-<form ng-hide="Falumnosinscritos">
+<form ng-hide="Falumnosinscritos" ng-submit="AlumnosInscritos(curso.CURSO_ID,jornada.JORNADA_ID,horario.HORARIO_ID)">
     <H1 class="display-4 font-weight-bold"  align="center"> Alumnos Inscritos </H1>
     <section class="container">
         <div class="form-group row">
             <label for="curso" class="col-2 col-form-label">Curso</label>
             <div class="col-3">
-                <select id="curso" name="curso" class="custom-select">
-                    <option value="rabbit">Rabbit</option>
-                    <option value="duck">Duck</option>
-                    <option value="fish">Fish</option>
-                </select>
+                <select id="curso" class="custom-select" ng-model="curso" ng-options="c.CURSO_NOMBRE for c in Cursos" ></select>
             </div>
         </div>
 
         <div class="form-group row">
             <label for="jornada" class="col-2 col-form-label">Jornada</label>
             <div class="col-3">
-                <select id="jornada" name="jornada" class="custom-select">
-                    <option value="rabbit">Rabbit</option>
-                    <option value="duck">Duck</option>
-                    <option value="fish">Fish</option>
-                </select>
+                <select id="jornada" class="custom-select" ng-model="jornada" ng-options="j.JORNADA_NOMBRE for j in Jornadas"></select>
             </div>
         </div>
         <div class="form-group row">
             <label for="horario" class="col-2 col-form-label">Horario</label>
             <div class="col-3">
-                <select id="horario" name="horario" class="custom-select">
-                    <option value="rabbit">Rabbit</option>
-                    <option value="duck">Duck</option>
-                    <option value="fish">Fish</option>
-                </select>
+                <select id="horario" class="custom-select" ng-model="horario" ng-options="h.HORARIO_HORARIO for h in Horarios"></select>
             </div>
             <div class="offset-lg-1">
-                <button name="submit" type="submit" class="btn btn-success">Listar</button>
+                <input name="submit" type="submit" class="btn btn-success" value="Listar">
             </div>
         </div>
 
@@ -49,27 +37,23 @@
                         <thead>
                         <tr>
                             <th>Codigo</th>
-                            <th>Nombres</th>
-                            <th>Apellidos</th>
-                            <th>Fecha de Nacimiento</th>
-                            <th>Direccion</th>
-                            <th>Teléfono</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
                             <th>Curso</th>
-                            <th>Jornada</th>
                             <th>Horario</th>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>Tiger Nixon</td>
-                            <td>System Architect</td>
-                            <td>Edinburgh</td>
-                            <td>61</td>
-                            <td>2011/04/25</td>
-                            <td>$320,800</td>
-                            <td>$320,800</td>
-                            <td>$320,800</td>
-                            <td>$320,800</td>
+                        <tr ng-repeat="Resultado in AlumnosInscritorResult">
+                            <td >{{Resultado.ALUMNO_ID}}</td>
+                            <td>{{Resultado.ALUMNO_NOMBRE1}}</td>
+                            <td>{{Resultado.ALUMNO_APELLIDO1}}</td>
+                            <td>{{Resultado.CURSO_NOMBRE}}</td>
+                            <td>{{Resultado.HORARIO_HORARIO}}</td>
+                            <td>{{Resultado.ALUMNO_DIRECCION}}</td>
+                            <td>{{Resultado.ALUMNO_TELEFONO}}</td>
 
                         </tr>
                         </tbody>
