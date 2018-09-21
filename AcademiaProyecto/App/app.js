@@ -68,7 +68,8 @@ angular.module("AppAcademia",[])
         $scope.Fmensualiades=true;
         $scope.Fretalumnos=true;
         $scope.Frepgeneral=false;
-
+        $scope.ListaDeAlumnosRetirados();
+        $scope.ListadoAlumnosPorCurso();
 
     };
 
@@ -115,6 +116,13 @@ angular.module("AppAcademia",[])
         },function (errr) {
             console.log(err);
         });
+    //Cargar los meses de la tabla meses anio
+    $http.get("https://webapifinalfinal.azurewebsites.net/api/MESESANIO")
+        .then(function (data) {
+           $scope.MesesAnio=data.data;
+        },function (err) {
+            console.log(err);
+        });
 
 //funcion que recibe los parametros para insertar los alumnos
 $scope.InsertarAlumnos=function (cursoid,jonadaid,horarioid) {
@@ -125,14 +133,15 @@ $scope.InsertarAlumnos=function (cursoid,jonadaid,horarioid) {
     console.log($scope.Alumno);
     $http.post("https://webapifinalfinal.azurewebsites.net/api/ALUMNOS",$scope.Alumno)
         .then(function (data) {
-            console.log("enviado");
+          /*  console.log("enviado");*/
             console.log(data);
         },function (data) {
-            console.log('errror');
+      /*      console.log('errror');*/
             console.log(data);
         })
     $scope.Alumno={};
 };
+
 //devuelve los alumnos inscritos
 $scope.AlumnosInscritos=function (cursoid,jornadaid,horarioid) {
     $http.get("https://webapifinalfinal.azurewebsites.net/api/inscritos/curso/"+cursoid+"/jornada/"+jornadaid+"/horario/"+horarioid+"")
@@ -143,6 +152,7 @@ $scope.AlumnosInscritos=function (cursoid,jornadaid,horarioid) {
             console.log(status);
         })
 };
+
 //lista los alumnos para cargar notas
 $scope.ListaAsignaNotas=function (curosid,horarioid) {
     $http.get("https://webapifinalfinal.azurewebsites.net/api/AsignaNotas/curso/"+curosid+"/horario/"+horarioid+"")
@@ -154,6 +164,7 @@ $scope.ListaAsignaNotas=function (curosid,horarioid) {
             console.log(err);
         });
 };
+
 //inserta las notas
 $scope.InsertarNotas=function (bimestreid,alumnoid,calificacion) {
   $http.get("https://webapifinalfinal.azurewebsites.net/api/CALIFICACIONES/insertar/bimestre/"+bimestreid+"/alumno/"+alumnoid+"/calificacion/"+calificacion+"")
@@ -165,5 +176,118 @@ $scope.InsertarNotas=function (bimestreid,alumnoid,calificacion) {
       })
 };
 
+//busca por codigo y nos indica el mensaje a mostrar en la tabla
+$scope.EncontroReslutado=true;//nos sirve para deplegar un mensaje en la tabla mensualidades
+$scope.BuscarPorCodigoAlum=function (alumnoid) {
 
-});
+    $http.get("https://webapifinalfinal.azurewebsites.net/api/ListaInscritosPorID/"+alumnoid+"")
+        .then(function (data,) {
+            $scope.BuscarPorCodigoAlumRsult=data.data;
+
+            if(data.data.length>0){
+                $scope.EncontroReslutado=true;
+               }
+               else{
+                $scope.EncontroReslutado=false;
+               }
+
+           $scope.BuscarMensualidades(alumnoid);//cargara las mensualidades pagadas por el alumno
+           console.log($scope.BuscarPorCodigoAlumRsult);
+        },function (err) {
+            $scope.EncontroReslutado=false;
+            $scope.BuscarPorCodigoAlumRsult={};
+            $scope.BuscarMensualidadesResult={};//se vacian el objeto y deja en blanco los controles
+            console.log(err.status);
+        });
+};
+
+//inserta la seleccion de la mensualidad y el alumno al que le correponde
+
+$scope.InsertaMensaualidad=function (mesid,alumnoid) {
+    $http.post("https://webapifinalfinal.azurewebsites.net/api/MENSUALIDADES",
+             {
+                 MES_ID: mesid,
+                 ALUMNO_ID: alumnoid,
+                 MENSUALIDAD_CANCELADO:"OK"
+             }
+            )
+        .then(function (data) {
+            console.log(data);
+            $scope.BuscarMensualidadesResult={};//vacio la tabla con los meses
+            $scope.BuscarMensualidades(alumnoid);//refresco la tabal con los nuevos valores
+        },function (err) {
+            console.log(err);
+        });
+};
+
+//busqueda de mensualidades por id
+$scope.BuscarMensualidades=function (alumnoid) {
+  $http.get("https://webapifinalfinal.azurewebsites.net/api/MENSUALIDADES/meses/"+alumnoid+"")
+      .then(function (data) {
+          $scope.BuscarMensualidadesResult={};
+          $scope.BuscarMensualidadesResult=data.data;
+          console.log(data);
+      },function (err) {
+          console.log(err);
+      });
+};
+
+//se una en la pantalla retirar alumnos se podria retilizaar el bucarporcodigoalum pero ejecuta otros metos tambien
+$scope.EncontroReslutado2=true;
+$scope.BuscarPorCodigoAlumRetirar=function (alumnoid) {
+    $http.get("https://webapifinalfinal.azurewebsites.net/api/ListaInscritosPorID/"+alumnoid+"")
+        .then(function (data) {
+            $scope.BuscarPorCodigoAlumRsultRetirar=data.data;//se usa en la pantalla de retirar alumnos
+
+            if(data.data.length>0){
+                $scope.EncontroReslutado2=true;
+            }
+            else{
+                $scope.EncontroReslutado2=false;
+            }
+
+        },function (err) {
+            console.log(err);
+        });
+};
+
+
+$scope.RetirarAlumnos=function (alumnoid) {
+    $http.get("https://webapifinalfinal.azurewebsites.net/api/RetirarAlumnos/"+alumnoid+"")
+        .then(function (data) {
+            $scope.BuscarPorCodigoAlumRsultRetirar={};//SI SE REALIZA CORRECTAMENTE SE VACIA LA TABLA
+        },function (err) {
+            console.log(err);
+        });
+};
+//obtiene el listado de todos los alumnos retireados
+$scope.ListaDeAlumnosRetirados=function () {
+  $http.get("https://webapifinalfinal.azurewebsites.net/api/alumnosretirados")
+      .then(function (data) {
+          $scope.ListaDeAlumnosRetiradosResult=data.data;
+          console.log( $scope.ListaDeAlumnosRetiradosResult);
+      },function (err) {
+          console.log(err);
+      });
+};
+
+$scope.ListadoAlumnosPorCurso=function () {
+  $http.get("https://webapifinalfinal.azurewebsites.net/api/AlumnosPorCurso/1")
+        .then(function (data) {
+            $scope.ListadoTecnicoOperador=data.data;
+           // console.log($scope.ListadoTecnicoOperador);
+        },function (err) {
+            console.log(err);
+        });
+
+    $http.get("https://webapifinalfinal.azurewebsites.net/api/AlumnosPorCurso/2")
+        .then(function (data) {
+            $scope.ListadoTecnicoProgramdor=data.data;
+            console.log( $scope.ListadoTecnicoProgramdor);
+        },function (err) {
+            console.log(err);
+        });
+};
+
+
+});//fin del controlador

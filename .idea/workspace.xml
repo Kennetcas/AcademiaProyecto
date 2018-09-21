@@ -5,8 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademiaProyecto/App/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/App/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" beforeDir="false" afterPath="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,36 +20,40 @@
     <session id="1561317534">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="11" />
-          <entry key="js" value="2" />
+          <entry key="html" value="35" />
+          <entry key="js" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="11" />
-          <entry key="JavaScript" value="2" />
+          <entry key="HTML" value="35" />
+          <entry key="JavaScript" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1294" />
-          <entry key="js" value="3209" />
+          <entry key="html" value="2606" />
+          <entry key="js" value="5690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1294" />
-          <entry key="JavaScript" value="3209" />
+          <entry key="HTML" value="2605" />
+          <entry key="JavaScript" value="5691" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.rename.constructor" />
@@ -61,47 +67,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AcademiaProyecto/App/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="160" column="99" selection-start-line="160" selection-start-column="99" selection-end-line="160" selection-end-column="99" />
+            <state relative-caret-position="4080">
+              <caret line="285" column="56" selection-start-line="285" selection-start-column="32" selection-end-line="285" selection-end-column="56" />
               <folding>
-                <element signature="e#493#701#0" />
-                <element signature="e#747#957#0" />
-                <element signature="e#992#1202#0" />
-                <element signature="e#1245#1455#0" />
-                <element signature="e#1495#1705#0" />
-                <element signature="e#1745#1955#0" />
-                <element signature="e#2082#2164#0" />
-                <element signature="e#2180#2251#0" />
-                <element signature="e#2381#2462#0" />
-                <element signature="e#2478#2547#0" />
-                <element signature="e#2675#2756#0" />
-                <element signature="e#2772#2841#0" />
-                <element signature="e#3040#3095#0" />
-                <element signature="e#3235#3402#0" />
-                <element signature="e#3774#3782#0" />
-                <element signature="e#4533#4541#0" />
+                <element signature="e#107#148#0" />
+                <element signature="e#502#710#0" />
+                <element signature="e#756#966#0" />
+                <element signature="e#1001#1211#0" />
+                <element signature="e#1254#1464#0" />
+                <element signature="e#1504#1714#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html">
+        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+            <state relative-caret-position="187">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -134,14 +133,14 @@
         <option value="$PROJECT_DIR$/startbootstrap-sb-admin-gh-pages/otros archivos/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/Mensaje.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/index.html" />
-        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/index.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html" />
         <option value="$PROJECT_DIR$/AcademiaProyecto/App/app.js" />
+        <option value="$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html" />
       </list>
     </option>
   </component>
@@ -161,9 +160,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1038" />
+    <option name="x" value="431" />
+    <option name="y" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,12 +183,6 @@
               <item name="Academia" type="b2602c69:ProjectViewProjectNode" />
               <item name="AcademiaProyecto" type="462c0819:PsiDirectoryNode" />
               <item name="AcademiaProyecto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Academia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AcademiaProyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="AcademiaProyecto" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Academia" type="b2602c69:ProjectViewProjectNode" />
@@ -262,16 +256,20 @@
       <workItem from="1537214061415" duration="720000" />
       <workItem from="1537246522188" duration="10241000" />
       <workItem from="1537321194158" duration="17667000" />
+      <workItem from="1537382297318" duration="20201000" />
+      <workItem from="1537465244174" duration="5886000" />
+      <workItem from="1537492667813" duration="4385000" />
+      <workItem from="1537498689288" duration="497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69563000" />
+    <option name="totallyTimeSpent" value="100532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2033557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21409395" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -291,6 +289,27 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20604026" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -305,13 +324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-629">
           <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/otros archivos/tables.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4692">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -330,77 +342,77 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/Mensaje.html" />
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html">
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/otros archivos/tables.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="66" lean-forward="true" selection-start-line="21" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="45" lean-forward="true" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="17">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmInscripciones.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" lean-forward="true" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="680">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmAlumnosInscritos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+        <state relative-caret-position="136">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmNotas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+        <state relative-caret-position="-51">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmMensualidades.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmRetirarAlumnos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/App/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="160" column="99" selection-start-line="160" selection-start-column="99" selection-end-line="160" selection-end-column="99" />
+        <state relative-caret-position="4080">
+          <caret line="285" column="56" selection-start-line="285" selection-start-column="32" selection-end-line="285" selection-end-column="56" />
           <folding>
-            <element signature="e#493#701#0" />
-            <element signature="e#747#957#0" />
-            <element signature="e#992#1202#0" />
-            <element signature="e#1245#1455#0" />
-            <element signature="e#1495#1705#0" />
-            <element signature="e#1745#1955#0" />
-            <element signature="e#2082#2164#0" />
-            <element signature="e#2180#2251#0" />
-            <element signature="e#2381#2462#0" />
-            <element signature="e#2478#2547#0" />
-            <element signature="e#2675#2756#0" />
-            <element signature="e#2772#2841#0" />
-            <element signature="e#3040#3095#0" />
-            <element signature="e#3235#3402#0" />
-            <element signature="e#3774#3782#0" />
-            <element signature="e#4533#4541#0" />
+            <element signature="e#107#148#0" />
+            <element signature="e#502#710#0" />
+            <element signature="e#756#966#0" />
+            <element signature="e#1001#1211#0" />
+            <element signature="e#1254#1464#0" />
+            <element signature="e#1504#1714#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AcademiaProyecto/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="62" column="22" lean-forward="true" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="187">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcademiaProyecto/Formularios/FrmReportes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
         </state>
       </provider>
     </entry>

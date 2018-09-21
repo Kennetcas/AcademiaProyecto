@@ -10,61 +10,43 @@
                         <div class="input-group-addon">
                             <i class="fa fa-edit"></i>
                         </div>
-                        <input id="codigo" name="codigo" type="text" required="required" class="form-control here">
+                        <input id="codigo" name="codigo" type="text" ng-model="alumnoid" required="required" class="form-control here">
                     </div>
                 </div>
                 <div class="offset-1">
-                    <button name="submit" type="submit" class="btn btn-success">Buscar</button>
+                    <button name="submit" ng-click="BuscarPorCodigoAlum(alumnoid)" type="submit" class="btn btn-success">Buscar</button>
                 </div>
             </div>
 
 
 
             <!-- DataTables Example -->
-            <div class="card mb-3">
-                <div class="card-header" align="center">
+            <div class="card mb-3 card text-center">
+                <div class="card-header" align="center" ng-show="EncontroReslutado">
                     <i class="fas fa-user"></i>
-                    Informacion de Alumno</div>
+                    Informacion de Alumno </div>
+
+                <div class="card-header" align="center" ng-show="!EncontroReslutado">
+                    <i class="fas fa-user"></i>
+                    No se encuetra al alumno verifique su codigo</div>
+
                 <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0" >
                             <thead>
                             <tr>
                                 <th>Codigo</th>
                                 <th>Nombres</th>
                                 <th>Apellidos</th>
-                                <th>Enero</th>
-                                <th>Febrero</th>
-                                <th>Marzo</th>
-                                <th>Abril</th>
-                                <th>Mayo</th>
-                                <th>Junio</th>
-                                <th>Julio</th>
-                                <th>Agosto</th>
-                                <th>Septiembre</th>
-                                <th>Octubre</th>
-                                <th>Noviembre</th>
-                                <th>Diciembre</th>
+                                <th  ng-repeat="res in BuscarMensualidadesResult">{{res.MES_NOMBRE}}</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <td>NANANA</td>
-                                <td>Vamosporelor</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
-
+                            <tr  class="col-5" ng-repeat="resulcodigo in BuscarPorCodigoAlumRsult">
+                                <td>{{resulcodigo.ALUMNO_ID}}</td>
+                                <td>{{resulcodigo.ALUMNO_NOMBRE1}} {{resulcodigo.ALUMNO_NOMBRE2}} {{resulcodigo.ALUMNO_NOMBRE3}}</td>
+                                <td>{{ resulcodigo.ALUMNO_APELLIDO1}} {{ resulcodigo.ALUMNO_APELLIDO2}} {{ resulcodigo.ALUMNO_APELLIDO3}} </td>
+                                <td ng-repeat="res2 in BuscarMensualidadesResult">{{res2.MENSUALIDAD_CANCELADO}}</td>
                             </tr>
                             </tbody>
                         </table>
@@ -74,14 +56,10 @@
             <div class="form-group row">
                 <label for="pago" class="col-2 col-form-label">Cancelar Mes</label>
                 <div class="col-2">
-                    <select id="pago" name="pago" class="custom-select">
-                        <option value="enero">Enero</option>
-                        <option value="febrero">Febrero</option>
-                        <option value="marzo">Marzo</option>
-                    </select>
+                    <select id="pago" class="custom-select" ng-model="mes" ng-options="c.MES_NOMBRE for c in MesesAnio" ></select>
                 </div>
                 <div class="offset-lg-0">
-                    <button name="submit" type="submit" class="btn btn-danger">Pagar</button>
+                    <button name="submit" type="submit" ng-click="InsertaMensaualidad(mes.MES_ID,alumnoid)" class="btn btn-danger">Pagar</button>
                 </div>
             </div>
 

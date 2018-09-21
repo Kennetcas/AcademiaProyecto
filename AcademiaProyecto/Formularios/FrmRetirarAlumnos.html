@@ -10,20 +10,25 @@
                         <div class="input-group-addon">
                             <i class="fa fa-edit"></i>
                         </div>
-                        <input id="codigo" name="codigo" type="text" required="required" class="form-control here">
+                        <input id="codigo" name="codigo" type="text" required="required" class="form-control here" ng-model="alumnoid">
                     </div>
                 </div>
                 <div class="offset-lg-1">
-                    <button name="submit" type="submit" class="btn btn-success">Buscar</button>
+                    <button name="submit" type="submit" ng-click="BuscarPorCodigoAlumRetirar(alumnoid)" class="btn btn-success">Buscar</button>
                 </div>
             </div>
 
 
             <!-- DataTables Example -->
-            <div class="card mb-3">
-                <div class="card-header" align="center">
+            <div class="card mb-3 card text-center">
+                <div class="card-header" align="center" ng-show="EncontroReslutado2">
                     <i class="fas fa-user"></i>
                     Informacion de Alumno</div>
+
+                <div class="card-header" align="center" ng-show="!EncontroReslutado2">
+                    <i class="fas fa-user"></i>
+                    No se encuetra al alumno verifique su codigo</div>
+
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -38,13 +43,13 @@
 
                             </tr>
                             </thead>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>$320,800</td>
-                                <td>$320,800</td>
+                            <tr ng-repeat="R in BuscarPorCodigoAlumRsultRetirar">
+                                <td>{{R.ALUMNO_ID}}</td>
+                                <td>{{R.ALUMNO_NOMBRE1}} {{R.ALUMNO_NOMBRE2}} {{R.ALUMNO_NOMBRE3}}</td>
+                                <td>{{R.ALUMNO_APELLIDO1}} {{R.ALUMNO_APELLIDO2}} {{R.ALUMNO_APELLIDO3}}</td>
+                                <td>{{R.CURSO_NOMBRE}}</td>
+                                <td>{{R.JORNADA_NOMBRE}}</td>
+                                <td>{{R.HORARIO_HORARIO}}</td>
 
 
                             </tr>
@@ -57,7 +62,7 @@
 
             <div class="form-group row">
                 <div class="offset-5 col-9">
-                    <button name="eliminar" type="submit" class="btn btn-danger">Retirar</button>
+                    <button name="eliminar" type="submit" class="btn btn-danger" ng-click="RetirarAlumnos(alumnoid)">Retirar</button>
                 </div>
             </div>
         </form>
